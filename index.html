@@ -1,78 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+الملف الرئيسي للموقع
+يعرض السيرة الذاتية باستخدام HTML فقط
+-->
+
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>Personal CV | Mohammed Shaqer</title>
+
+  <!-- لجعل الموقع متجاوب مع الهاتف -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>السيرة الذاتية | سرور أحمد</title>
+
+  <!-- ربط ملف التنسيق -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- القسم العلوي: الصورة والاسم -->
   <header class="profile-header">
-    <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+    <img src="profile.jpg" alt="الصورة الشخصية" class="profile-img">
 
-    <h1>soror ahmed </h1>
-    <span class="job-title">Web Developer</span>
+    <h1>سرور أحمد</h1>
+    <span class="job-title">مطور ويب</span>
 
-    <button id="toggle-theme">Dark Mode</button>
+    <!-- زر تغيير الوضع الليلي -->
+    <button id="toggle-theme">الوضع الليلي</button>
   </header>
 
-  <!-- About -->
+  <!-- نبذة شخصية -->
   <section class="card">
-    <h2>About Me</h2>
-    <ul class="info-list">
-      <ul><strong>Name:</strong> soror ahmed </ul>
-      <ul><strong>Age:</strong> 23 yers old </ul>
-      <ul><strong>fevr food</strong>pitza </ul>
-      <ul><strong>fevr games :</strong> tennis </ul>
+    <h2>نبذة عني</h2>
+    <ul>
+      <li><strong>الاسم:</strong> سرور أحمد</li>
+      <li><strong>العمر:</strong> 23 سنة</li>
+      <li><strong>الطعام المفضل:</strong> بيتزا</li>
+      <li><strong>اللعبة المفضلة:</strong> التنس</li>
     </ul>
   </section>
 
-  <!-- Skills -->
+  <!-- المهارات -->
   <section class="card">
-    <h2>Skills</h2>
-    <ul class="skills-list">
+    <h2>المهارات</h2>
+    <ul>
       <li>HTML</li>
       <li>CSS</li>
       <li>JavaScript</li>
     </ul>
   </section>
 
-  <!-- Education -->
+  <!-- الدراسة -->
   <section class="card">
-    <h2>Education</h2>
+    <h2>الدراسة</h2>
     <p>
-      Bachelor in Computer Science and Mathematics  
-      <br>
-      Department of Networking
+      بكالوريوس علوم الحاسوب والرياضيات<br>
+      قسم الشبكات
     </p>
   </section>
 
-  <!-- Experience -->
+  <!-- الدورات والخبرة -->
   <section class="card">
-    <h2>Experience / Courses</h2>
+    <h2>الدورات والخبرة</h2>
     <ul>
-      <li>Web Development Course</li>
-      <li>Programming Fundamentals</li>
+      <li>دورة تطوير الويب</li>
+      <li>أساسيات البرمجة</li>
     </ul>
   </section>
 
-  <!-- Projects -->
+  <!-- المشاريع -->
   <section class="card">
-    <h2>Projects</h2>
+    <h2>المشاريع</h2>
     <ul>
-      <li>Personal CV Website</li>
-      <li>Simple Calculator using JavaScript</li>
+      <li>موقع سيرة ذاتية شخصية</li>
+      <li>آلة حاسبة بسيطة باستخدام JavaScript</li>
     </ul>
   </section>
 
-  <!-- Contact -->
-  <section class="card contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> kim.syron2002@email.com</p>
+  <!-- التواصل -->
+  <section class="card">
+    <h2>التواصل</h2>
+    <p><strong>البريد الإلكتروني:</strong> kim.syron2002@email.com</p>
     <p><strong>GitHub:</strong> github.com/username</p>
   </section>
 
+  <!-- ربط ملف الجافاسكربت -->
   <script src="script.js"></script>
 </body>
 </html>
