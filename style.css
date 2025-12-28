@@ -181,7 +181,6 @@ body{
   opacity: 0.7;
 }
 
-/* المحتوى */
 .content{
   position: relative;
   z-index: 30;
@@ -189,7 +188,6 @@ body{
   padding-bottom: 50px;
 }
 
-/* البطاقة (تأثير زجاجي راقٍ) */
 .card{
   width: min(920px, 92%);
   margin: 26px auto;
@@ -268,7 +266,6 @@ h2{
   background: rgba(255,255,255,0.75);
 }
 
-/* أنميشن */
 .reveal{
   opacity: 0;
   transform: translateY(40px);
@@ -280,7 +277,6 @@ h2{
   transform: translateY(0);
 }
 
-/* الفوتر */
 .footer{
   width: min(920px, 92%);
   margin: 20px auto 0;
@@ -289,7 +285,6 @@ h2{
   padding: 12px 10px;
 }
 
-/* الوضع الليلي */
 body.dark{
   background:
     radial-gradient(1000px 550px at 15% 0%, rgba(173,20,87,0.28), transparent 60%),
@@ -316,7 +311,6 @@ body.dark .hero{
     linear-gradient(135deg, #6a1b9a, #ad1457);
 }
 
-/* هنا اخلي تقليل الحركة عند الحاجة */
 @media (prefers-reduced-motion: reduce){
   *{ animation: none !important; transition: none !important; }
   .rose-layer{ display: none; }
