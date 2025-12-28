@@ -1,10 +1,7 @@
-/* وضع ليلي + حفظ الاختيار + ظهور عند التمرير + توليد الورد */
-
 const btn = document.getElementById("toggle-theme");
 const year = document.getElementById("year");
 year.textContent = new Date().getFullYear();
 
-/* تطبيق الوضع المحفوظ */
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") document.body.classList.add("dark");
 
@@ -21,7 +18,6 @@ btn.addEventListener("click", () => {
   updateThemeText();
 });
 
-/* هنا تظهر البطاقات */
 const reveals = document.querySelectorAll(".reveal");
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -31,7 +27,6 @@ const io = new IntersectionObserver((entries) => {
 
 reveals.forEach(el => io.observe(el));
 
-/* هنا يتولد ورد عشوائية */
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function rand(min, max) {
