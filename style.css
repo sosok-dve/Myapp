@@ -1,5 +1,4 @@
 
-/* هنا اخلي اعدادات عامة */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root{
@@ -23,7 +22,6 @@
   --radius: 26px;
 }
 
-/* خلفية ناعمة */
 body{
   font-family: "Segoe UI", Tahoma, Arial, sans-serif;
   color: var(--text);
@@ -35,23 +33,20 @@ body{
     linear-gradient(180deg, var(--bg1), var(--bg2));
 }
 
-/* طبقات مطر الورد */
 .rose-layer{
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: 8; /* فوق الخلفية */
+  z-index: 8; 
   overflow: hidden;
 }
 
-/* طبقة أمامية خفيفة جدًا */
 .rose-layer--front{
-  z-index: 40; /* فوق الشاشة */
-  opacity: 0.22; /* خفيفة حتى لا تزعج */
+  z-index: 40;
+  opacity: 0.22; 
   filter: saturate(1.1);
 }
 
-/* البتلة */
 .rose-petal{
   position: absolute;
   top: -12vh;
@@ -70,7 +65,6 @@ body{
   animation-delay: var(--delay);
 }
 
-/* لمعان خفيف داخل البتلة */
 .rose-petal::before{
   content:"";
   position:absolute;
@@ -80,7 +74,6 @@ body{
   opacity: 0.55;
 }
 
-/* خط رفيع كعصب البتلة */
 .rose-petal::after{
   content:"";
   position:absolute;
@@ -105,7 +98,6 @@ body{
   100% { margin-left: 0; }
 }
 
-/* الهيدر */
 .hero{
   position: relative;
   z-index: 20;
